@@ -490,4 +490,12 @@ body {
     max-width: 380px;
   }
 }
+.hero-img img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
 
