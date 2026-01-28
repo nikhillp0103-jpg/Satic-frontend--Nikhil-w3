@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>THE EMPIRE - Modern Glass UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-wrapper container">
+      <!-- LOGO -->
+      <div class="logo">THE EMPIRE</div>
+
+      <!-- NAVIGATION LINKS -->
+      <nav class="navigation">
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ACTION BUTTONS (Desktop only) -->
+      <div class="action-buttons desktop-actions">
+        <a href="#hire" class="cta-btn cta-primary">Hire Me</a>
+        <a href="#contact" class="cta-btn cta-secondary">Contact</a>
+      </div>
+
+      <!-- HAMBURGER TOGGLE -->
+      <div class="menu-toggle">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-wrapper container">
+      <div class="hero-text">
+        <h1>We Build Digital Experiences</h1>
+        <p>Professional web solutions with modern design and cutting-edge technologies.</p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn primary large">Our Services</a>
+          <a href="#contact" class="btn secondary large">Contact Us</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1556155092-8707de31f9c4" alt="Showcase of Modern Digital Experience" class="hero-image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services-section">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid container">
+      <div class="service-card animate-card-hover">
+        <div class="service-icon">💻</div>
+        <h3>Web Development</h3>
+        <p>Responsive, modern websites with smooth animations and UX-focused design.</p>
+      </div>
+      <div class="service-card animate-card-hover">
+        <div class="service-icon">📱</div>
+        <h3>Mobile Apps</h3>
+        <p>High-quality mobile applications for Android and iOS platforms.</p>
+      </div>
+      <div class="service-card animate-card-hover">
+        <div class="service-icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <p>Creative design solutions to improve user engagement and experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about-section">
+    <div class="about-wrapper container">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>We are passionate about creating premium web and mobile solutions that bring ideas to life.</p>
+        <ul>
+          <li>Modern Glass UI design</li>
+          <li>Responsive and adaptive layouts</li>
+          <li>Cutting-edge technologies</li>
+          <li>Focus on user experience</li>
+        </ul>
+      </div>
+      <div class="hero-img">
+  <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8" alt="Digital Experience">
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials" class="testimonials-section">
+    <h2 class="section-title">Testimonials</h2>
+    <div class="testimonials-grid container">
+      <div class="testimonial-card animate-card-hover">
+        <p>"Amazing team! Delivered our project faster than expected."</p>
+        <cite>- Client A</cite>
+      </div>
+      <div class="testimonial-card animate-card-hover">
+        <p>"Design and performance are top-notch. Highly recommended."</p>
+        <cite>- Client B</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section id="contact" class="cta-section">
+    <div class="cta-wrapper container">
+      <h2>Ready to Start Your Project?</h2>
+      <p>Contact us today and let's build something amazing together.</p>
+      <a href="#hire" class="btn primary large">Hire Us</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-wrapper container">
+      <div class="footer-left">
+        <p>&copy; 2026 THE EMPIRE. All Rights Reserved.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== HAMBURGER JS ===== -->
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector(".navigation");
+
+    menuToggle.addEventListener("click", () => {
+      navigation.classList.toggle("active");
+
+      // Toggle icon
+      if (navigation.classList.contains("active")) {
+        menuToggle.innerHTML = "&times;"; // ✖
+      } else {
+        menuToggle.innerHTML = "&#9776;"; // ☰
+      }
+    });
+  </script>
+
+</body>
+  </html>
