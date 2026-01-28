@@ -484,3 +484,10 @@ body {
   margin: 10px auto;
   border-radius: 10px;
 }
+
+@media(min-width: 768px) {
+  .hero-img img {
+    max-width: 380px;
+  }
+}
+
