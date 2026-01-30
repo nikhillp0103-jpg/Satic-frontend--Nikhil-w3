@@ -1,155 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>THE EMPIRE - Modern Glass UI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions - Software Development</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Added for icons -->
 </head>
 <body>
-
-  <!-- ===== HEADER ===== -->
-  <header class="site-header">
-    <div class="header-wrapper container">
-      <!-- LOGO -->
-      <div class="logo">THE EMPIRE</div>
-
-      <!-- NAVIGATION LINKS -->
-      <nav class="navigation">
-        <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- ACTION BUTTONS (Desktop only) -->
-      <div class="action-buttons desktop-actions">
-        <a href="#hire" class="cta-btn cta-primary">Hire Me</a>
-        <a href="#contact" class="cta-btn cta-secondary">Contact</a>
-      </div>
-
-      <!-- HAMBURGER TOGGLE -->
-      <div class="menu-toggle">&#9776;</div>
-    </div>
-  </header>
-
-  <!-- ===== HERO ===== -->
-  <section id="hero" class="hero-section">
-    <div class="hero-wrapper container">
-      <div class="hero-text">
-        <h1>We Build Digital Experiences</h1>
-        <p>Professional web solutions with modern design and cutting-edge technologies.</p>
-        <div class="hero-buttons">
-          <a href="#services" class="btn primary large">Our Services</a>
-          <a href="#contact" class="btn secondary large">Contact Us</a>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-code"></i> TECHNOVA SOLUTIONS</h1> <!-- Added icon for attractiveness -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
-      <div class="hero-img">
-  <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" alt="Digital Experience">
-      </div>
-      
-    </div>
-  </section>
+    </header>
 
-  <!-- ===== SERVICES ===== -->
-  <section id="services" class="services-section">
-    <h2 class="section-title">Our Services</h2>
-    <div class="services-grid container">
-      <div class="service-card animate-card-hover">
-        <div class="service-icon">💻</div>
-        <h3>Web Development</h3>
-        <p>Responsive, modern websites with smooth animations and UX-focused design.</p>
-      </div>
-      <div class="service-card animate-card-hover">
-        <div class="service-icon">📱</div>
-        <h3>Mobile Apps</h3>
-        <p>High-quality mobile applications for Android and iOS platforms.</p>
-      </div>
-      <div class="service-card animate-card-hover">
-        <div class="service-icon">🎨</div>
-        <h3>UI/UX Design</h3>
-        <p>Creative design solutions to improve user engagement and experience.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay">
+            <div class="container">
+                <h2>Welcome to TechNova</h2>
+                <p>Innovative Software Solutions for Modern Businesses</p>
+                <button>Get Started <i class="fas fa-arrow-right"></i></button> <!-- Added icon -->
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="about-section">
-    <div class="about-wrapper container">
-      <div class="about-text">
-        <h2>About Us</h2>
-        <p>We are passionate about creating premium web and mobile solutions that bring ideas to life.</p>
-        <ul>
-          <li>Modern Glass UI design</li>
-          <li>Responsive and adaptive layouts</li>
-          <li>Cutting-edge technologies</li>
-          <li>Focus on user experience</li>
-        </ul>
-      </div>
-      <div class="hero-img">
-  <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8" alt="Digital Experience">
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About TechNova Solutions</h2>
+            <p>Leading software development company with <strong>1000+ projects delivered</strong> to global clients.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-bullseye fa-2x"></i> <!-- Added icon -->
+                    <h3>Our Mission</h3>
+                    <p>Delivering cutting-edge software solutions that drive business growth and innovation.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-award fa-2x"></i> <!-- Added icon -->
+                    <h3>Expertise</h3>
+                    <p><strong>15+ years</strong> of experience in web and mobile app development.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users fa-2x"></i> <!-- Added icon -->
+                    <h3>Client Base</h3>
+                    <p>500+ satisfied clients including Fortune 500 companies.</p>
+                </div>
+            </div>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Custom Web Applications</li>
+                <li><i class="fas fa-check-circle"></i> Mobile App Development</li>
+                <li><i class="fas fa-check-circle"></i> Cloud Solutions & AI Integration</li>
+                <li><i class="fas fa-check-circle"></i> 24/7 Support & Maintenance</li>
+                <li><i class="fas fa-check-circle"></i> Agile Development Process</li>
+            </ul>
+        </div>
+    </section>
 
-  <!-- ===== TESTIMONIALS ===== -->
-  <section id="testimonials" class="testimonials-section">
-    <h2 class="section-title">Testimonials</h2>
-    <div class="testimonials-grid container">
-      <div class="testimonial-card animate-card-hover">
-        <p>"Amazing team! Delivered our project faster than expected."</p>
-        <cite>- Client A</cite>
-      </div>
-      <div class="testimonial-card animate-card-hover">
-        <p>"Design and performance are top-notch. Highly recommended."</p>
-        <cite>- Client B</cite>
-      </div>
-    </div>
-  </section>
+    <!-- Services Section -->
+    <section id="services" class="section alt-bg">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Comprehensive software solutions tailored to your needs.</p>
+            <div class="services">
+                <div class="service">
+                    <i class="fas fa-globe fa-2x"></i> <!-- Added icon -->
+                    <h3>Web Development</h3>
+                    <p>React | Node.js | Full-Stack Solutions</p>
+                    <p class="price">$5,000 | 2-3 Months</p>
+                    <button>Get Quote</button>
+                </div>
+                <div class="service">
+                    <i class="fas fa-mobile-alt fa-2x"></i> <!-- Added icon -->
+                    <h3>Mobile Apps</h3>
+                    <p>React Native | iOS/Android | Cross-Platform</p>
+                    <p class="price">$8,000 | 3-4 Months</p>
+                    <button>Get Quote</button>
+                </div>
+                <div class="service">
+                    <i class="fas fa-cloud fa-2x"></i> <!-- Added icon -->
+                    <h3>Cloud Solutions</h3>
+                    <p>AWS | Azure | DevOps | Scalable Apps</p>
+                    <p class="price">$10,000 | 4-6 Months</p>
+                    <button>Get Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== CTA ===== -->
-  <section id="contact" class="cta-section">
-    <div class="cta-wrapper container">
-      <h2>Ready to Start Your Project?</h2>
-      <p>Contact us today and let's build something amazing together.</p>
-      <a href="#hire" class="btn primary large">Hire Us</a>
-    </div>
-  </section>
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team">
+                <div class="member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23ff5722'/><text x='50%' y='55%' font-size='12' fill='%23fff' text-anchor='middle'>JD</text></svg>" alt="John Doe" />
+                    <h3>John Doe</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23ff5722'/><text x='50%' y='55%' font-size='12' fill='%23fff' text-anchor='middle'>JS</text></svg>" alt="Jane Smith" />
+                    <h3>Jane Smith</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="member">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23ff5722'/><text x='50%' y='55%' font-size='12' fill='%23fff' text-anchor='middle'>MJ</text></svg>" alt="Mike Johnson" />
+                    <h3>Mike Johnson</h3>
+                    <p>Project Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer-wrapper container">
-      <div class="footer-left">
-        <p>&copy; 2026 THE EMPIRE. All Rights Reserved.</p>
-      </div>
-      <div class="footer-right">
-        <a href="#" aria-label="Facebook">Facebook</a>
-        <a href="#" aria-label="Twitter">Twitter</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-      </div>
-    </div>
-  </footer>
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2>Our Achievements</h2>
+            <div class="stats">
+                <div class="stat">
+                    <div>1000+</div>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat">
+                    <div>500+</div>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat">
+                    <div>99%</div>
+                    <p>Satisfaction Rate</p>
+                </div>
+                <div class="stat">
+                    <div>15+</div>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== HAMBURGER JS ===== -->
-  <script>
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navigation = document.querySelector(".navigation");
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section alt-bg">
+        <div class="container">
+            <h2>What Clients Say</h2>
+            <div class="testimonials">
+                <blockquote>
+                    <p>"TechNova transformed our business with a seamless web app. Highly recommended!"</p>
+                    <cite>— Sarah L., CEO of StartupX</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Outstanding mobile app development. Delivered on time and exceeded expectations."</p>
+                    <cite>— David R., Product Manager</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Their cloud solutions scaled our operations perfectly. Top-notch team!"</p>
+                    <cite>— Emily T., CTO</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
 
-    menuToggle.addEventListener("click", () => {
-      navigation.classList.toggle("active");
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Start Your Project Today</h2>
+            <p>Free consultation available! Let's discuss your ideas.</p>
+            <div class="contact">
+                <div class="info">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@technovasolutions.com</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8901</li>
+                        <li><i class="fas fa-map-marker-alt"></i> New York, NY</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9 AM - 6 PM</li>
+                    </ul>
+                </div>
+                <form>
+                    <input type="text" placeholder="Full Name *" required>
+                    <input type="tel" placeholder="Phone Number *" required>
+                    <input type="email" placeholder="Email Address *" required>
+                    <select required>
+                        <option>Select Service</option>
+                        <option>Web Development</option>
+                        <option>Mobile Apps</option>
+                        <option>Cloud Solutions</option>
+                    </select>
+                    <button type="submit">Get Free Consultation <i class="fas fa-paper-plane"></i></button> <!-- Added icon -->
+                </form>
+            </div>
+        </div>
+    </section>
 
-      // Toggle icon
-      if (navigation.classList.contains("active")) {
-        menuToggle.innerHTML = "&times;"; // ✖
-      } else {
-        menuToggle.innerHTML = "&#9776;"; // ☰
-      }
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 TechNova Solutions. All rights reserved.</p>
+            <ul>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#terms">Terms</a></li>
+            </ul>
+            <div class="newsletter">
+                <input type="email" placeholder="Subscribe to Updates">
+                <button>Subscribe <i class="fas fa-envelope-open"></i></button> <!-- Added icon -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS EMBEDDED HERE -->
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    // Hamburger menu toggle
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
     });
-  </script>
-
+    
+    // Close menu when clicking nav links
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+    
+    // "Get Started" button scrolls to Contact section
+    const getStartedBtn = document.querySelector('#hero button');
+    const contactSection = document.getElementById('contact');
+    
+    getStartedBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        contactSection.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+    </script>
 </body>
 </html>
